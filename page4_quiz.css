@@ -1,0 +1,26 @@
+#quiz {
+    width: 95%;
+    margin: auto;
+}
+
+.quiz-question {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.quiz-choice ul li {
+    list-style-type: none;
+}
+
+.quiz-number {
+    color: white;
+    background-color: var(--dark-color);
+    width: 40px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+.quiz-text {
+    padding-left: 5px;
+}

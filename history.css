@@ -3,6 +3,8 @@
     padding: 0;
     font-style: italic;
     font-size: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .history-section {
@@ -10,3 +12,47 @@
     padding: 1em;
     background-color: var(--light-color);
 }
+
+.summary {
+    font-size: 1em;
+    text-indent: 2em;
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+a#cRetour{
+    border-radius:64px;
+    padding:16px;
+    font-size:16px;
+    text-align:center;
+    color:var(--light-color);
+    background:var(--dark-color);
+    position:fixed;
+    right:20px;
+    opacity:1;
+    z-index:99999;
+    transition:all ease-in 0.5s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+  }
+  a#cRetour:before{ content: "\25b2"; }
+  a#cRetour:hover{
+    background:var(--dark-color);
+    transition:all ease-in 0.5s;
+  }
+
+  /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
+  a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+  }
+  
+  a#cRetour.cVisible{
+    bottom:20px;
+    opacity:1;
+  }
+  

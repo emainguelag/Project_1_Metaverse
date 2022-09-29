@@ -24,3 +24,35 @@
 .quiz-text {
     padding-left: 5px;
 }
+
+#quiz-result {
+    background-color: var(--dark-color);
+    color: white;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#quiz-score {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    height: 3.5em;
+
+}
+
+#quiz-score-nbr {
+    border: var(--soft-color) solid;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+#score-sentence {
+    padding-bottom: 1em;
+    width: 90%;
+    margin: auto;
+}

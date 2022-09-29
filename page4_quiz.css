@@ -56,3 +56,22 @@
     width: 90%;
     margin: auto;
 }
+
+#button-zone {
+    background-color: var(--dark-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+}
+
+
+#send-button {
+    margin-left: 1em;
+    border-radius: 20px;
+    height: 3em;
+    font-weight: bold;
+    background-color: var(--soft-color);
+    padding: 11px;
+}

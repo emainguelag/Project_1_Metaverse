@@ -9,40 +9,64 @@
     <link href="history.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Les Métavers : la petite histoire des mondes virtuels</h1>
-      <p class="h1-subtitle"> Définition, Principe technique, Histoire, Enjeux, et Ressources externes</p>
 
-<section class="history-section">
+<!-- Peut-être peut-on prévoir sur cette page aussi des ancres nommées -->
+
+<h1 id="haut">Les Métavers</h1>
+<p class="h1-subtitle">la petite histoire des mondes virtuels...</p>
+
+<ul class="summary">
+<li><a href="#definition">Définition</a></li>
+<li><a href="#demonstration">Principe technique</a></li>
+<li><a href="#history">Histoire</a></li>
+<li><a href="#societal-issues">Enjeux</a></li>
+<li><a href="#ressources">Ressources externes</a></li>
+</ul>
+
+<section class="history-section" id="definition">
 <h2>Qu'est-ce qu'un métavers ?</h2>
 <!-- définition et principe de fonctionnement -->
-
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
 <!-- prévoir une phrase sur les principaux métavers et lien vers page / sections dédiées -->
-
 </section>
 
-
-<section>
+<section class="history-section" id="demonstration">
 <h2>Suivez-le guide !</h2>
 <p>Tentez l'aventure avec une immersion en vidéo</p>
-
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
 </section>
 
-
-<section>
-    <h2>Un peu d'histoire ...</h2>
-    
+<section class="history-section" id="history">
+<h2>Un peu d'histoire ...</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
 </section>
 
-<section>
-    <h2>Enjeux économiques et sociétaux</h2>
-    
+<section class="history-section" id="societal-issues">
+<h2>Enjeux économiques et sociétaux</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
 </section>
 
-<section>
-    <h2>Pour aller plus loin ...</h2>
+<section class="history-section" id="ressources">
+<h2>Pour aller plus loin ...</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
 <!-- lien externes     -->
-
 </section>
 
+<!-- peut-être prévoir sur cette page une flèche de renvoi vers le haut -->
+
+<!-- div conteant la flèche de retour vers le haut, invisible par défaut. -->
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+
+<!-- Appel de la foncion javascript qui gère l'affichage de la flèche de retour vers le haut -->
+<!-- <script src="script.js">
+      document.addEventListener('DOMContentLoaded', cRetourDisplay);
+</script> -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+      };
+    });
+    </script>
 </body>
 </html>

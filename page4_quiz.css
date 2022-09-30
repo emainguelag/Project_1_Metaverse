@@ -59,7 +59,6 @@
 
 #button-zone {
     background-color: var(--dark-color);
-    color: white;
     display: flex;
     justify-content: center;
     height: 80px;
@@ -74,4 +73,8 @@
     font-weight: bold;
     background-color: var(--soft-color);
     padding: 11px;
+}
+
+#send-button:hover {
+    cursor: pointer;
 }

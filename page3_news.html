@@ -12,7 +12,8 @@
 
 <body>
     <header></header>
-    <h1>Actualités</h1>
+    <!-- l'id 'haut' sur le h1 permet d'activer la flèche de retour vers le haut -->
+    <h1 id="haut">Actualités</h1>
     <br>
     <br>
     <section>Vous n'avez pas le temps de faire votre revue de presse? <br>
@@ -216,8 +217,13 @@
 
     </ul>
 
+<!-- div conteant la flèche de retour vers le haut, invisible par défaut. -->
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 
-    <footer></footer>
+
+<footer></footer>
+
+<script src="script.js"></script>
+
 </body>
-
 </html>

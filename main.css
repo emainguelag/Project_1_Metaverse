@@ -63,4 +63,87 @@ p > img {
     display:flex;
     max-height: 150px;
     width: auto;
+
+    a#cRetour{
+        border-radius:2em;
+        padding:1em;
+        font-size:1em;
+        text-align:center;
+        color:var(--bright-color);
+        background:var(--bg-color);
+        border: var(--bright-color) 1px solid;
+        position:fixed;
+        right:20px;
+        opacity:1;
+        z-index:99999;
+        transition:all ease-in 0.5s;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        text-decoration: none;
+      }
+      a#cRetour:before{ content: "\25b2"; }
+      a#cRetour:hover{
+        color:var(--soft-color);
+        background:var(--bright-color);
+        transition:all ease-in 0.5s;
+      }
+    
+      /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
+      a#cRetour.cInvisible{
+        bottom:-35px;
+        opacity:0;
+        transition:all ease-in 0.5s;
+      }
+      
+      a#cRetour.cVisible{
+        bottom:20px;
+        opacity:1;
+      }
+      
+    
+    
+    
+<<<<<<< HEAD
 }
+=======
+}
+
+a#cRetour{
+    border-radius:2em;
+    padding:1em;
+    font-size:1em;
+    text-align:center;
+    color:var(--bright-color);
+    background:var(--bg-color);
+    border: var(--bright-color) 1px solid;
+    position:fixed;
+    right:20px;
+    opacity:1;
+    z-index:99999;
+    transition:all ease-in 0.5s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+  }
+  a#cRetour:before{ content: "\25b2"; }
+  a#cRetour:hover{
+    color:var(--soft-color);
+    background:var(--bright-color);
+    transition:all ease-in 0.5s;
+  }
+
+  /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
+  a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+  }
+  
+  a#cRetour.cVisible{
+    bottom:20px;
+    opacity:1;
+  }
+  
+
+
+>>>>>>> history

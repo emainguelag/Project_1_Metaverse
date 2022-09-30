@@ -9,24 +9,19 @@
     <link href="history.css" rel="stylesheet">
 </head>
 <body>
-
-<!-- Peut-être peut-on prévoir sur cette page aussi des ancres nommées -->
-
+<!-- l'id 'haut' sur le h1 permet d'activer la flèche de retour vers le haut -->
 <h1 id="haut">Les Métavers</h1>
 <p class="h1-subtitle">La petite histoire des mondes virtuels...</p>
 
 <ul class="summary">
 <li><a href="#definition">Définition</a></li>
-<li><a href="#demonstration">Principe technique</a></li>
+<li><a href="#demonstration">Vivez l'immersion !</a></li>
 <li><a href="#history">Histoire</a></li>
 <li><a href="#societal-issues">Enjeux & Risques</a></li>
-<!-- SECTION SUPPRIMEE / LIENS EXTERNES
-  <li><a href="#ressources">Ressources externes</a></li> -->
 </ul>
 
 <section class="history-section" id="definition">
 <h2>Qu'est-ce qu'un métavers ?</h2>
-<!-- définition et principe de fonctionnement -->
 <p>Un métavers (calque de l'anglais metaverse) est un monde virtuel. Le terme est régulièrement utilisé pour décrire une version future d'Internet où des espaces virtuels, persistants et partagés sont accessibles via interaction 3D ou 2D en visioconférence.</p>
 <p>Une autre définition conçoit le métavers comme l'ensemble des mondes virtuels connectés à Internet, lesquels sont perçus en réalité augmentée.</p>
 <p>Le terme de « métavers » est issu de la contraction de meta et universe. Le métavers est donc un méta-univers, ou un univers qui va au-delà de celui que nous connaissons. Il s'agit donc d'un monde virtuel structuré et ouvert.</p>
@@ -72,40 +67,16 @@ Les trois principaux métavers ont pour nom <strong>Decentraland</strong>, <stro
   <li>La consommation énergétique du Métavers, liée au stockage de données</li>
   <li>Le danger psychologique lié à la double vie dans le Metaverse</li>
   <li>Le harcèlement moral et sexuel dans le Metaverse</li>
-  <li>Toutes les dérives de comportement humains, exacerbées la virtualité</li>
-  <li>Les risques financiers, avec la possibilité pour quelques uns de s'enrichir, au détriment d'autres utilisateurs, plus nombreux, qui se trouveraient ruinés.</li>
+  <li>Toutes les dérives de comportement humain, exacerbées par la virtualité</li>
+  <li>Les risques financiers dûs à un défaut de régulation des transactions dans le Métaverse</li>
 </ul>
 </p>
 <p>Source : <a target="_blank" href="https://deep-dive.fr/social-media/metaverse-quels-sont-les-enjeux-et-les-risques-de-la-realite-augmentee/">deep-drive.fr</a></p>
 </section>
 
-<!-- TEST AFFICHAGE LOGO
-<section>
-  <div style="background-color:var(--dark-color);"><img src="pictures/logo-metavers-news-h50px-transparent.png"></div>
-</section> -->
-
-<!-- SECTION SUPPRIMEE / LIEN EXTERNE -->
-<!-- <section class="history-section" id="ressources">
-<h2>Pour aller plus loin ...</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra dignissim sollicitudin. Vivamus ac justo egestas, mollis dolor ac, gravida velit. Duis interdum dolor vel eros interdum, sagittis aliquet dui dapibus. Cras et felis massa. Etiam vestibulum nisl sit amet leo consectetur, sit amet aliquet lacus cursus. Aenean tellus lectus, placerat ut nisi ut, mattis pharetra magna. Sed euismod eget tortor non pellentesque. Pellentesque rutrum ligula ut vulputate egestas. Etiam consectetur ac nisl eu dictum. Duis sit amet finibus est. Nam pellentesque iaculis iaculis. Ut ut nunc dapibus erat tincidunt faucibus. Nulla bibendum in nunc sed iaculis.</p>
-lien externes    
-</section> -->
-
-<!-- peut-être prévoir sur cette page une flèche de renvoi vers le haut -->
-
 <!-- div conteant la flèche de retour vers le haut, invisible par défaut. -->
 <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 
-<!-- Appel de la foncion javascript qui gère l'affichage de la flèche de retour vers le haut -->
-<!-- <script src="script.js">
-      document.addEventListener('DOMContentLoaded', cRetourDisplay);
-</script> -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-      window.onscroll = function(ev) {
-        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
-      };
-    });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>

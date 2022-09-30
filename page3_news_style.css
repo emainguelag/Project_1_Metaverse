@@ -2,7 +2,7 @@ body {
     padding: 15px;
 }
 
-.news-list {
+#news-list {
     list-style-type: none;
     padding-inline-start: 0px;
 }
@@ -20,13 +20,23 @@ body {
 .news-item {
     background-color: #e4e6c3;
     padding: 10px;
+    margin: 30px 0px;
 }
 
 @media screen and (min-width: 1024px) {
+    #news-list {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
     .news-item {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 8fr;
+        grid-template-rows: 1fr 4fr;
+        margin: 15px;
+        height: auto;
     }
 
     .news-title {
@@ -41,5 +51,6 @@ body {
     .news-description {
         padding: 30px;
     }
+
 
 }

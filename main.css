@@ -56,3 +56,11 @@ a:hover {
 article {
     background-color: var(--light-color);
 }
+
+p > img {
+    text-align:center;
+    margin:auto;
+    display:flex;
+    max-height: 150px;
+    width: auto;
+}

@@ -1,16 +1,10 @@
-var nav = document.getElementById("nav");
-var openBtn = document.getElementById("openBtn");
-var closeBtn = document.getElementById("closeBtn");
+const button = document.getElementById('openBtn')
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
+button.addEventListener('click', function () {
+    const ul = document.getElementById('navbar');
+    const list = document.getElementsByClassName('ul');
 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    nav.classList.add("active");
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-    nav.classList.remove("active");
-}
+    for (const li of list) {
+        li.classList.toggle('horizontal');
+    }
+});

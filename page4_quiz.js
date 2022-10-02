@@ -13,6 +13,8 @@ function checkAndComplete() {
     checkSelection();
     if (checkAnswers === true) {
         scoreAndSentenceInHTML();
+        colorAnswer();
+        score = 0; // remise à 0 du compteur 
     }
 }
 
@@ -80,7 +82,21 @@ function countScore() {
 }
 
 
+////////////////fonction mise en couleur des réponses//////////////
 
+function colorAnswer() {
+    for (let i = 1; i <= 10; i++) { //boucle sur les 10 questions
+        const selectQuestion = document.getElementsByName('answer' + i); //selectionne les réponses de la question i
 
+        for (let y = 0; y <= 3; y++) { //boucle sur les 4 réponses
 
+            if (parseInt(selectQuestion[y].value) === 1) { //compte les points que pour les réponses sélectionnées
+                selectQuestion[y].parentNode.style.color = 'green';
+                selectQuestion[y].parentNode.style.fontWeight = 'bold';
+            } else {
+                selectQuestion[y].parentNode.style.color = 'red';
+            }
+        };
+    }
+}
 

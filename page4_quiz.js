@@ -42,7 +42,7 @@ function checkSelection() {
         };
 
         if (checkValue === 0) {
-            let emoji = String.fromCodePoint(0x1F621)
+            let emoji = String.fromCodePoint(0x1f605)
             alert("Attention ! Tu n'as pas répondu à toutes les questions..." + emoji);
             countCheckValue = 0; //remet le compteur à 0
             checkAnswers = false;

@@ -1,4 +1,4 @@
-#quiz {
+#quiz-body {
     width: 95%;
     margin: auto;
 }
@@ -10,6 +10,14 @@
 
 .quiz-choice ul li {
     list-style-type: none;
+}
+
+.quiz-text p {
+    font-weight: bold;
+}
+
+#titlePage {
+    border: solid;
 }
 
 .quiz-number {
@@ -78,4 +86,17 @@
 
 #send-button:hover {
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 450px) {
+
+    .quiz-question {
+
+        width: 60%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+
 }

@@ -2,18 +2,20 @@
 const selectionBouton = document.querySelector("#send-button");
 const spanScore = document.getElementById("quiz-score-nbr");
 const pSentence = document.getElementById("score-sentence");
+const divZoneScore = document.getElementById("quiz-result");
+const bodyPage = document.getElementById("quiz-body");
 
-
-//////////// (fonction vérif + remplissage zone score)///////////////
-
+//////////// (Fonction qui appelles toutes les fonctions au click du bouton)///////////////
 
 selectionBouton.addEventListener('click', checkAndComplete);
 
 function checkAndComplete() {
-    checkSelection();
+    checkSelection(); //vérifie si toutes les questions ont une réponse
     if (checkAnswers === true) {
-        scoreAndSentenceInHTML();
-        colorAnswer();
+        scoreZoneIsOn(); //affiche la zone de score
+        ScrollTopPage();
+        scoreAndSentenceInHTML(); //affiche les points et la phrase d'encouragement 
+        colorAnswer(); //met en couleur les réponses
         score = 0; // remise à 0 du compteur 
     }
 }
@@ -100,3 +102,16 @@ function colorAnswer() {
     }
 }
 
+
+////////////fonction affiche la zone de score///////////////
+
+function scoreZoneIsOn() {
+    divZoneScore.style.display = 'block';
+}
+
+
+////////////fonction qui remonte en haut de la page///////////////
+
+function ScrollTopPage() {
+    window.scrollTo(0, 0);
+}

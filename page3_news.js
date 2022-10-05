@@ -20,35 +20,46 @@ function visible(item) {
 }
 
 technoButton.addEventListener("click", function () {
-
+    socialArticles.forEach(visible);
+    securityArticles.forEach(visible);
+    financeArticles.forEach(visible);
+    technoArticles.forEach(visible);
     socialArticles.forEach(hidden);
     securityArticles.forEach(hidden);
     financeArticles.forEach(hidden);
 });
 
 socialButton.addEventListener("click", function () {
-
+    socialArticles.forEach(visible);
+    securityArticles.forEach(visible);
+    financeArticles.forEach(visible);
+    technoArticles.forEach(visible);
     technoArticles.forEach(hidden);
     securityArticles.forEach(hidden);
     financeArticles.forEach(hidden);
 });
 
 securityButton.addEventListener("click", function () {
-
+    socialArticles.forEach(visible);
+    securityArticles.forEach(visible);
+    financeArticles.forEach(visible);
+    technoArticles.forEach(visible);
     technoArticles.forEach(hidden);
     socialArticles.forEach(hidden);
     financeArticles.forEach(hidden);
 });
 
 financeButton.addEventListener("click", function () {
-
+    socialArticles.forEach(visible);
+    securityArticles.forEach(visible);
+    financeArticles.forEach(visible);
+    technoArticles.forEach(visible);
     technoArticles.forEach(hidden);
     socialArticles.forEach(hidden);
     securityArticles.forEach(hidden);
 });
 
 allButton.addEventListener("click", function () {
-
     socialArticles.forEach(visible);
     securityArticles.forEach(visible);
     financeArticles.forEach(visible);

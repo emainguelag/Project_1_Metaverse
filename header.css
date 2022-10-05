@@ -72,7 +72,7 @@ nav ul {
 
 #imagelogo {
     display: grid;
-    width: 300px;
+    width: auto;
     height: 40px;
     align-items: center;
     margin-right: 40px;
@@ -91,32 +91,65 @@ nav ul {
         background-color: var(--dark-color);
         justify-content: space-around;
         height: 150px;
+        width: 100%;
         padding: auto;
     }
 
     navbar {
         height: 0px;
+        width: auto;
     }
 
-    nav ul {
+    .sidenav>ul {
+        position: absolute;
         list-style-type: none;
         font-size: xx-large;
         margin-bottom: 0px;
         margin-right: 0px;
-        margin-left: 12.5vw;
+        margin-left: -75px;
         margin-top: 50px;
         display: inline-flex;
         justify-content: space-around;
-        width: 95vw;
+        width: 100vw;
         height: 10vh;
-        color: FF9FE5;
     }
 
     .sidenavmenu {
-        display: inline;
+        display: inline-flex;
     }
 
+    .sidenav {
+        position: absolute;
+        display: flex;
+        ;
+        height: 100px;
+        width: 0px;
+        z-index: 1;
+        top: 0;
+        left: 0px;
+        background-color: var(--dark-color);
+        padding-top: 60px;
+        transition: none;
+    }
 
+    .sidenav>a {
+        display: none;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: none;
+        transition: 0.3s;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        display: none;
+    }
 
     .burger-icon>span {
         display: none;
@@ -129,10 +162,12 @@ nav ul {
     #imagelogo {
         height: 50px;
         width: auto;
-        display: inline-flex;
-        justify-content: center;
-        margin-left: 700px;
-        margin-top: 10px;
+        display: flex;
     }
 
+    #logo {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
 }

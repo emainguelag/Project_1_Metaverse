@@ -40,6 +40,10 @@ main article {
     display: none;
 }
 
+.visible {
+    display: grid;
+}
+
 @media screen and (min-width: 1024px) {
     #news-list {
         margin: 0px;
@@ -66,7 +70,7 @@ main article {
     }
 
     .news-description {
-        padding: 30px;
+        padding: 10px 30px 30px 30px;
     }
 
 

@@ -1,7 +1,6 @@
 footer {
     background-color: var(--dark-color);
     margin-top: 15px;
-    box-shadow: 0px -2px 5px var(--dark-color);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -18,7 +17,7 @@ footer {
 
 #text-footer {
     color: var(--soft-color);
-    font-size: 0.5em;
+    font-size: 0.7em;
 }
 
 #logo-site {
@@ -38,17 +37,18 @@ footer {
     footer div {
         display: inline-flex;
         align-items: center;
-        width: 33%;
+        width: 30%;
     }
 
 
     #logo-site {
         margin-top: 0;
-        width: 100%;
+        width: 50vh;
+        padding-left: 20px;
     }
 
     #social-networks {
-        width: 33%;
+        width: 30%;
         display: flex;
         justify-content: flex-end;
     }
@@ -63,10 +63,10 @@ footer {
 
     #text-footer {
         color: var(--soft-color);
-        font-size: 1em;
+        font-size: 0.9em;
         display: inline-flex;
         align-items: center;
-        width: 33%;
+        width: 30%;
         justify-content: center;
     }
 

@@ -1,0 +1,82 @@
+body {
+    margin: auto;
+    background-color: var(--bg-color);
+}
+
+.hp-menu {
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    padding: 0;
+    width: 80vw;
+    text-align: center;
+    justify-content: center;
+    }
+
+.hp-card {
+    color: var(--light-color);
+    font-size: 2em;
+    font-weight: bold;
+    background-color: var(--dark-color);
+    padding: 0;
+    border: var(--dark-color) 1px solid;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 288px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 0.5em var(--soft-color);
+}
+
+.hp-card p {
+    margin: 0;
+}
+
+.hp-card:hover {
+    background-image: url("pictures/virtual-reality-300.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 0em 0em 0em var(--soft-color);
+}
+
+.hp-card-description {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.hp-card-button {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    width: auto;
+    margin: 0;
+    margin-top: 2rem;
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+    border: var(--bright-color) 1px solid;
+    border-radius: 2rem;
+  }
+  
+  .hp-card-button:hover {
+    background-color: var(--bright-color);
+    color:var(--light-color)
+  }
+  
+  .hp-card-button:hover a{
+    color:var(--light-color)
+  }
+  
+
+/* Version Desktop */
+
+@media screen and (min-width: 640px) {
+
+    .hp-menu {
+        grid-template-columns: 1fr 1fr;
+        width: 640px;
+        }
+    }

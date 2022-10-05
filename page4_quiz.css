@@ -23,9 +23,13 @@
 .quiz-number {
     color: white;
     background-color: var(--dark-color);
-    width: 40px;
     text-align: center;
     padding-top: 1em;
+}
+
+.quiz-number span {
+    display: block;
+    width: 40px;
 }
 
 
@@ -87,6 +91,8 @@
 #send-button:hover {
     cursor: pointer;
 }
+
+
 
 
 @media screen and (min-width: 450px) {

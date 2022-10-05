@@ -2,6 +2,19 @@ body {
     padding: 15px;
 }
 
+section {
+    margin: 15px;
+
+
+}
+
+section button {
+    background-color: var(--dark-color);
+    color: var(--bg-color);
+    border-radius: 15px;
+    margin: 0px 5px;
+}
+
 #news-list {
     list-style-type: none;
     padding-inline-start: 0px;
@@ -17,10 +30,14 @@ body {
     margin-inline-end: 0px;
 }
 
-.news-item {
-    background-color: #e4e6c3;
+main article {
+    background-color: var(--light-color);
     padding: 10px;
     margin: 30px 0px;
+}
+
+.hidden {
+    display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -31,7 +48,7 @@ body {
         column-gap: 15px;
     }
 
-    .news-item {
+    main article {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 4fr;

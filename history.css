@@ -8,51 +8,91 @@
 }
 
 .history-section {
+    display: block;
+    justify-content:left;
     margin:2em;
     padding: 1em;
     background-color: var(--light-color);
+    max-width: 560px;
 }
 
-.summary {
-    font-size: 1em;
-    text-indent: 2em;
-    margin:0;
+ul.summary {
+    font-size: 1rem;
+    font-weight: bold;
+    margin:2em;
     padding: 0;
     list-style-type: none;
-    display: inline-block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:left;
+  }
+
+ul.summary li {
+  background-color: var(--bg-color);
+  padding: 0.5em;
+  margin: 0.5em;
+  border: var(--bright-color) 1px solid;
+  border-radius: 2em;
+  box-shadow: 5px 5px 5px var(--light-color);
 }
 
-a#cRetour{
-    border-radius:64px;
-    padding:16px;
-    font-size:16px;
-    text-align:center;
-    color:var(--light-color);
-    background:var(--dark-color);
-    position:fixed;
-    right:20px;
-    opacity:1;
-    z-index:99999;
-    transition:all ease-in 0.5s;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    text-decoration: none;
-  }
-  a#cRetour:before{ content: "\25b2"; }
-  a#cRetour:hover{
-    background:var(--dark-color);
-    transition:all ease-in 0.5s;
-  }
+ul.summary li:hover {
+  background-color: var(--bright-color);
+}
 
-  /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
-  a#cRetour.cInvisible{
-    bottom:-35px;
-    opacity:0;
-    transition:all ease-in 0.5s;
-  }
-  
-  a#cRetour.cVisible{
-    bottom:20px;
-    opacity:1;
-  }
-  
+ul.summary li:hover a{
+  color:var(--light-color)
+}
+
+.history-button {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  width: auto;
+  margin: 0;
+  margin-top: 0.5em;
+  background-color: var(--bg-color);
+  padding: 0.5em;
+  border: var(--bright-color) 1px solid;
+  border-radius: 2em;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.history-button:hover {
+  background-color: var(--bright-color);
+}
+
+.history-button:hover a{
+  color:var(--light-color)
+}
+
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 55%; /* creates a 560:308 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+  width: 100%;
+  max-width: 560px;
+}
+
+
+.picture-display {
+  max-width: 400px;
+}
+
+.section-container {
+  display:inline;
+}

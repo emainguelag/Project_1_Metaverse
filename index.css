@@ -11,25 +11,27 @@ body {
     padding: 0;
     width: 80vw;
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     }
 
 .hp-card {
     color: var(--light-color);
     font-size: 2em;
     font-weight: bold;
-    background-color: var(--dark-color);
+    background-color: var(--bright-color);
     padding: 0;
     border: var(--dark-color) 1px solid;
-    margin: 1rem;
-    background-repeat: no-repeat;
+    margin: 0.5rem;
+    transition: transform .2s;
+    /* background-image: url("pictures/virtual-reality-300.jpg");
+    background-repeat: no-repeat; */
     width: 288px;
     height: 288px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0.5em 0.5em 0.5em var(--soft-color);
+    /* box-shadow: 0.5em 0.5em 0.5em var(--soft-color); */
 }
 
 .hp-card p {
@@ -39,7 +41,14 @@ body {
 .hp-card:hover {
     background-image: url("pictures/virtual-reality-300.jpg");
     background-repeat: no-repeat;
-    box-shadow: 0em 0em 0em var(--soft-color);
+    /* box-shadow: 0em 0em 0em var(--soft-color); */
+    cursor: pointer;
+    /* background-color: var(--dark-color); */
+    /* -webkit-transition: background-color 10s ease-out;
+    -moz-transition: background-color 10s ease-out;
+    -o-transition: background-color 10s ease-out;
+    transition: background-color 10s ease-out; */
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */  
 }
 
 .hp-card-description {

@@ -8,23 +8,27 @@
 }
 
 .history-section {
-    display: block;
-    justify-content:left;
-    margin:2em;
-    padding: 1em;
-    background-color: var(--light-color);
-    max-width: 560px;
+    display: grid 1fr;
+    justify-content:center;
+    margin:0;
+    padding: 0;
+}
+
+.history-article {
+  background-color: var(--light-color);
+  margin: 1.3rem;
+  padding: 1.3rem;
 }
 
 ul.summary {
     font-size: 1rem;
     font-weight: bold;
-    margin:2em;
+    margin:1.3rem;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content:left;
+    justify-content:center;
   }
 
 ul.summary li {
@@ -50,7 +54,7 @@ ul.summary li:hover a{
   font-weight: bold;
   width: auto;
   margin: 0;
-  margin-top: 0.5em;
+  margin-top: 1rem;
   background-color: var(--bg-color);
   padding: 0.5em;
   border: var(--bright-color) 1px solid;
@@ -70,7 +74,7 @@ ul.summary li:hover a{
 .video-container {
   position: relative;
   overflow: hidden;
-  padding-bottom: 55%; /* creates a 560:308 aspect ratio */
+  padding-bottom: 56%; /* creates a 560:308 aspect ratio */
 }
 
 .video-container iframe {
@@ -79,7 +83,6 @@ ul.summary li:hover a{
   left: 0;
   width: 100%;
   height: 100%;
-  max-width: 100%;
 }
 
 /* And set the max-width of the parent element */
@@ -93,6 +96,14 @@ ul.summary li:hover a{
   max-width: 400px;
 }
 
-.section-container {
-  display:inline;
+
+/* Version Desktop */
+
+@media screen and (min-width: 640px) {
+  .history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+}
+

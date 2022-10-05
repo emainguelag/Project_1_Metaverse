@@ -5,38 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1_Metaverse</title>
+    <title>Metavers.News, le site de référence sur les métavers</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+    <<<<<<< HEAD <link rel="stylesheet" href="index.css">
+        =======
+        <link rel="stylesheet" href="footer.css">
+        >>>>>>> footer
 </head>
 
-</header>
+
 
 <body>
     <header>
         <nav>
-            <div class="navbar">
-                <img id="imagelogo" src="../pictures/logo-metavers-news-h50px.png" alt="" />
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
                 <ul>
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Historique</a></li>
-                    <li><a href="#">Métaverses</a></li>
-                    <li><a href="#">Actualité</a></li>
-                    <li><a href="# ">Quiz</a></li>
+                    <li><a href="page1_history.html">Historique</a></li>
+                    <li><a href="page2_actors.html">Métaverses</a></li>
+                    <li><a href="page3_news.html">Actualité</a></li>
+                    <li><a href="page4_quiz.html">Quiz</a></li>
                 </ul>
             </div>
-            <div id="btnMenu">
+            <a href="#" id="openBtn">
                 <span class="burger-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-                <button id="openBtn" type="button">Changer</button>
+            </a>
+            <div class="navbar">
+                <img id="imagelogo" src="/pictures/logo-metavers-news-h50px-transparent.png" alt="" />
             </div>
-
+            </div>
         </nav>
 
-        <script src="header.js"></script>
+
+    </header>
+    <script src="header.js"></script>
+    <main class="hp-menu">
+        <div class="hp-card">
+            <p>Un peu d'histoire</p>
+            <p class="hp-card-description">Présentation, définition, enjeux sociétaux</p>
+            <a href="page1_history.html" class="hp-card-button">En savoir plus</a>
+        </div>
+        <div class="hp-card">
+            <p>Les Métavers</p>
+            <p class="hp-card-description">The Sandbox, Decentraland, Roblox, World Horizons, ...</p>
+            <a href="page2_actors.html" class="hp-card-button">En savoir plus</a>
+        </div>
+        <div class="hp-card">
+            <p>Actualités</p>
+            <p class="hp-card-description">Les dernières informations sur les métavers</p>
+            <a href="page3_news.html" class="hp-card-button">En savoir plus</a>
+        </div>
+        <div class="hp-card">
+            <p>Quizz</p>
+            <p class="hp-card-description">Testez vos connaissances !</p>
+            <a href="page4_quiz.html" class="hp-card-button">En savoir plus</a>
+        </div>
+    </main>
 </body>
+
+<footer>
+    <div>
+        <img id="logo-site" src=".\pictures\logo-metavers-news-h50px-transparent.png" alt="">
+    </div>
+
+    <div id="text-footer">
+        <p>Copyright © 2022. Metanews, Tous droits réservés.</p>
+    </div>
+
+    <div id="social-networks">
+        <img id="insta-img" src=".\pictures\logo-insta.png" alt="insta-logo">
+        <img id="facebook-img" src=".\pictures\logo-fb.png" alt="facebook-logo">
+        <img id="twitter-img" src=".\pictures\logo-twitter-bleu.png" alt="twitter-logo">
+    </div>
+
+
+</footer>
+
+
+
+</body>
+
+<script src="header.js"></script>
 
 </html>

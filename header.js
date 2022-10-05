@@ -1,10 +1,15 @@
-const button = document.getElementById('openBtn')
+var sidenav = document.getElementById("mySidenav");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
 
-button.addEventListener('click', function () {
-    const ul = document.getElementById('navbar');
-    const list = document.getElementsByClassName('ul');
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
 
-    for (const li of list) {
-        li.classList.toggle('horizontal');
-    }
-});
+
+function openNav() {
+    sidenav.classList.add("active");
+}
+
+function closeNav() {
+    sidenav.classList.remove("active");
+}

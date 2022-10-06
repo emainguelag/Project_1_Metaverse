@@ -74,7 +74,7 @@ a#cRetour {
     background: var(--bg-color);
     border: var(--bright-color) 1px solid;
     position: fixed;
-    left: 50%;
+    right: 5vw;
     opacity: 1;
     z-index: 99999;
     transition: all ease-in 0.5s;
@@ -96,12 +96,12 @@ a#cRetour:hover {
 
 /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
 a#cRetour.cInvisible {
-    bottom: -35px;
+    bottom: -5vw;
     opacity: 0;
     transition: all ease-in 0.5s;
 }
 
 a#cRetour.cVisible {
-    bottom: 20px;
+    bottom: 5vw;
     opacity: 1;
 }

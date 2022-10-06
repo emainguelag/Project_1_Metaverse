@@ -11,17 +11,16 @@ section {
 section button {
     display: inline-block;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     width: auto;
     margin: 0px 5px;
     margin-top: 1rem;
     padding: 0.5em;
-    border-radius: 15px;
-    border-radius: 2em;
+    /* border-radius: 2em; */
     background-color: var(--bg-color);
     color: var(--bright-color);
     border: var(--bright-color) 1px solid;
-    box-shadow: 5px 5px 5px var(--light-color);
+    /* box-shadow: 5px 5px 5px var(--light-color); */
 
 }
 

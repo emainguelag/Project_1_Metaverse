@@ -15,20 +15,19 @@
 }
 
 .history-article {
-  background-color: var(--light-color);
   margin: 1.3rem;
   padding: 1.3rem;
 }
 
 ul.summary {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     margin:1.3rem;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content:left;
   }
 
 ul.summary li {
@@ -36,8 +35,8 @@ ul.summary li {
   padding: 0.5em;
   margin: 0.5em;
   border: var(--bright-color) 1px solid;
-  border-radius: 2em;
-  box-shadow: 5px 5px 5px var(--light-color);
+  /* border-radius: 2em; */
+  /* box-shadow: 5px 5px 5px var(--light-color); */
 }
 
 ul.summary li:hover {
@@ -48,7 +47,7 @@ ul.summary li:hover a{
   color:var(--light-color)
 }
 
-.history-button {
+/* .history-button {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
@@ -69,7 +68,7 @@ ul.summary li:hover a{
 .history-button:hover a{
   color:var(--light-color)
 }
-
+ */
 
 .video-container {
   position: relative;

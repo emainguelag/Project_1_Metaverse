@@ -7,6 +7,8 @@ body {
     padding: 10px;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
+    box-shadow: 0px 0px 8px black;
+    justify-items: center;
 
 }
 
@@ -43,6 +45,11 @@ main div img {
     margin: 15px;
 }
 
+#logo4 {
+    padding-top: 5px;
+    width: 40%;
+}
+
 
 @media screen and (min-width: 600px) and (max-width: 1199px) {
     #logos {
@@ -59,8 +66,6 @@ main div img {
 @media screen and (min-width: 1200px) {
     #logos {
         grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
-        box-shadow: 0px 0px 8px black;
-        justify-items: center;
     }
 
     .logo {

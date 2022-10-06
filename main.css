@@ -75,14 +75,14 @@ a#cRetour {
     background: var(--bg-color);
     border: var(--bright-color) 1px solid;
     position: fixed;
-    right: 5vw;
+    right: 2vw;
     opacity: 1;
     z-index: 99999;
     transition: all ease-in 0.5s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     text-decoration: none;
-    box-shadow: 5px 5px 5px var(--light-color);
+    /* box-shadow: 5px 5px 5px var(--light-color); */
 }
 
 a#cRetour:before {
@@ -103,6 +103,6 @@ a#cRetour.cInvisible {
 }
 
 a#cRetour.cVisible {
-    bottom: 20vh;
+    bottom: 115px;
     opacity: 1;
 }

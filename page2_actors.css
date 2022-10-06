@@ -7,6 +7,8 @@ body {
     padding: 10px;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
+    box-shadow: 0px 0px 8px black;
+    justify-items: center;
 
 }
 
@@ -43,7 +45,25 @@ main div img {
     margin: 15px;
 }
 
-@media screen and (min-width: 640px) {
+#logo4 {
+    padding-top: 5px;
+    width: 40%;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    #logos {
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    }
+
+    #articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     #logos {
         grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
     }
@@ -51,6 +71,11 @@ main div img {
     .logo {
         max-width: 150px;
         padding: 0px 20px 0px 20px;
+    }
+
+    #logo4 {
+        padding-top: 5px;
+        width: 40%;
     }
 
     #articles {
@@ -69,7 +94,11 @@ main div img {
         margin: 30px 10px 10 px 10px;
         grid-row-start: 1;
         grid-row-end: 3;
-        padding: 30px 0px 0px 0px;
+        /* padding-top: 4em; */
+    }
+
+    .actor-text {
+        margin: 0;
     }
 
 

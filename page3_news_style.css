@@ -60,7 +60,15 @@ main article {
     display: grid;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    #news-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     #news-list {
         margin: 0px;
         display: grid;

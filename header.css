@@ -1,9 +1,9 @@
 nav {
-    border: 1px solid black;
     background-color: var(--dark-color);
     display: flex;
-    margin: 0px;
-    padding: 10px;
+    margin: auto;
+    padding: auto;
+
 }
 
 nav ul {
@@ -23,12 +23,12 @@ nav ul {
     transition: left 0.5s ease;
 }
 
-.sidenav>ul>li>a {
-    color: #FF9FE5;
-}
-
 .sidenavmenu {
     display: none;
+}
+
+.sidenav>ul>li>a {
+    color: #FF9FE5;
 }
 
 /* Sidenav menu links */
@@ -57,6 +57,7 @@ nav ul {
     top: 0;
     right: 25px;
     font-size: 36px;
+    color: #FF9FE5;
 }
 
 /* Icône burger */
@@ -72,7 +73,7 @@ nav ul {
 
 #imagelogo {
     display: grid;
-    width: auto;
+    width: 87vw;
     height: 40px;
     align-items: center;
     margin-right: 40px;
@@ -82,6 +83,7 @@ nav ul {
 #openBtn {
     align-self: center;
     margin-bottom: 10px;
+    margin-right: -15px;
 }
 
 @media screen and (min-width: 600px) {
@@ -90,14 +92,33 @@ nav ul {
         display: block;
         background-color: var(--dark-color);
         justify-content: space-around;
-        height: 150px;
-        width: 100%;
+        height: 120px;
+        width: auto;
         padding: auto;
     }
 
-    navbar {
-        height: 0px;
+    nav ul {
+        list-style-type: none;
         width: auto;
+    }
+
+    .sidenavmenu {
+        display: inline-flex;
+        width: auto;
+    }
+
+    .sidenav {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: auto;
+        z-index: 1;
+        top: 0;
+        left: 0px;
+        background-color: var(--dark-color);
+        padding-top: 60px;
+        padding-right: 10px;
+        transition: none;
     }
 
     .sidenav>ul {
@@ -106,40 +127,23 @@ nav ul {
         font-size: xx-large;
         margin-bottom: 0px;
         margin-right: 0px;
-        margin-left: -75px;
-        margin-top: 50px;
-        display: inline-flex;
+        margin-left: -39px;
+        margin-top: 5px;
+        display: flex;
         justify-content: space-around;
         width: 100vw;
         height: 10vh;
     }
 
-    .sidenavmenu {
-        display: inline-flex;
-    }
-
-    .sidenav {
-        position: absolute;
-        display: flex;
-        ;
-        height: 100px;
-        width: 0px;
-        z-index: 1;
-        top: 0;
-        left: 0px;
-        background-color: var(--dark-color);
-        padding-top: 60px;
-        transition: none;
-    }
-
     .sidenav>a {
-        display: none;
-        padding: 8px 8px 8px 32px;
+        display: flex;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
-        display: none;
-        transition: 0.3s;
+        transition: 0;
+        margin-right: 20px;
+        color: #FF9FE5;
+        width: 100vw;
     }
 
     /* Close btn */
@@ -163,6 +167,7 @@ nav ul {
         height: 50px;
         width: auto;
         display: flex;
+        margin-right: -50px;
     }
 
     #logo {

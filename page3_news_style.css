@@ -48,7 +48,6 @@ section button:hover {
 }
 
 main article {
-    background-color: var(--light-color);
     padding: 10px;
     margin: 30px 0px;
 }

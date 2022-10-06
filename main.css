@@ -4,6 +4,7 @@
     --light-color: #E4E6C3;
     --soft-color: #FF9FE5;
     --bright-color: #55286F;
+    --article-bg: #E4E1E4;
     --text-font: 'Roboto', sans-serif;
 }
 
@@ -54,7 +55,7 @@ a:hover {
 }
 
 article {
-    background-color: var(--light-color);
+    background-color: var(--article-bg);
 }
 
 p>img {
@@ -96,12 +97,12 @@ a#cRetour:hover {
 
 /* classe par défaut (invisible) du lien contenu dans la flèche de retour vers le haut */
 a#cRetour.cInvisible {
-    bottom: -5vw;
+    bottom: -5vh;
     opacity: 0;
     transition: all ease-in 0.5s;
 }
 
 a#cRetour.cVisible {
-    bottom: 5vw;
+    bottom: 20vh;
     opacity: 1;
 }

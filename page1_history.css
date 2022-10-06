@@ -99,7 +99,7 @@ ul.summary li:hover a{
 
 /* Version Desktop */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 600px) {
   .history-section {
     display: grid;
     grid-template-columns: 1fr 1fr;

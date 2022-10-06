@@ -8,10 +8,39 @@
     <title>News</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="page3_news_style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
-    <header></header>
+
+    <header>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="page1_history.html">Historique</a></li>
+                    <li><a href="page2_actors.html">Métavers</a></li>
+                    <li><a href="page3_news.html">Actualité</a></li>
+                    <li><a href="page4_quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <div id="logo">
+                <img id="imagelogo" src="pictures/logo-metavers-news-h50px-transparent.png" alt="" />
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
     <!-- l'id 'haut' sur le h1 permet d'activer la flèche de retour vers le haut -->
     <h1 id="haut">Actualités</h1>
     <br>
@@ -20,10 +49,10 @@
         Pas de problème, on s'en est occupé pour vous!!</p>
     <section id="tags-selection">
         <button class="all-button">Tous</button>
-        <button class="techno-button">techno</button>
-        <button class="social-button">société</button>
-        <button class="finance-button">finance</button>
-        <button class="security-button">sécurité</button>
+        <button class="techno-button"># techno</button>
+        <button class="social-button"># société</button>
+        <button class="finance-button"># finance</button>
+        <button class="security-button"># sécurité</button>
     </section>
 
 
@@ -203,10 +232,25 @@
     <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
 
 
-    <footer></footer>
+    <footer>
+        <div>
+            <img id="logo-site" src=".\pictures\logo-metavers-news-h50px--rose-transparent.png" alt="">
+        </div>
+
+        <div id="text-footer">
+            <p>Copyright © 2022. Metanews, Tous droits réservés.</p>
+        </div>
+
+        <div id="social-networks">
+            <a href="#"><img id="insta-img" src=".\pictures\logo-insta.png" alt="insta-logo"></a>
+            <a href="#"><img id="facebook-img" src=".\pictures\logo-fb.png" alt="facebook-logo"></a>
+            <a href="#"><img id="twitter-img" src=".\pictures\logo-twitter-bleu.png" alt="twitter-logo"></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="page3_news.js"></script>
+    <script src="header.js"></script>
 
 
 </body>

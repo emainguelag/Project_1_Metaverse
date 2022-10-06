@@ -13,6 +13,7 @@ body {
 
 
 .logo {
+    max-width: 100px;
     margin: 10px;
     padding: 2px;
     display: inline-flex;
@@ -42,14 +43,33 @@ main div img {
     margin: 15px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     #logos {
-        display: none;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr;
+    }
+
+    .logo {
+        max-width: 150px;
+        padding: 0px 20px 0px 20px;
     }
 
     #articles {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .actor-article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 10fr;
+
+    }
+
+    .article-logo {
+        margin: 30px 10px 10 px 10px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 30px 0px 0px 0px;
     }
 
 

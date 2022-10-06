@@ -9,11 +9,28 @@ section {
 }
 
 section button {
-    background-color: var(--dark-color);
-    color: var(--bg-color);
-    border-radius: 15px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    width: auto;
     margin: 0px 5px;
+    margin-top: 1rem;
+    padding: 0.5em;
+    border-radius: 15px;
+    border-radius: 2em;
+    background-color: var(--bg-color);
+    color: var(--bright-color);
+    border: var(--bright-color) 1px solid;
+    box-shadow: 5px 5px 5px var(--light-color);
+
 }
+
+section button:hover {
+    background-color: var(--bright-color);
+    color: var(--light-color);
+}
+
+
 
 #news-list {
     list-style-type: none;
@@ -44,7 +61,7 @@ main article {
     display: grid;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 640px) {
     #news-list {
         margin: 0px;
         display: grid;
